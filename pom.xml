@@ -55,6 +55,13 @@
             <version>2.3.6</version>
         </dependency>
 
+        <dependency>
+            <groupId>io.ebean</groupId>
+            <artifactId>ebean-test</artifactId>
+            <version>12.3.7-SNAPSHOT</version>
+            <scope>test</scope>
+        </dependency>
+
         <!--ebean start-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
