@@ -2,16 +2,12 @@ package com.example.ebean.test.demo.organization.repository.conf;
 
 import io.ebean.Database;
 import io.ebean.DatabaseFactory;
-import io.ebean.EbeanServer;
-import io.ebean.EbeanServerFactory;
 import io.ebean.config.DatabaseConfig;
 import io.ebean.config.MatchingNamingConvention;
 import io.ebean.config.dbplatform.DatabasePlatform;
 import io.ebean.config.dbplatform.IdType;
 import io.ebean.config.dbplatform.mariadb.MariaDbHistorySupport;
 import io.ebean.spring.txn.SpringJdbcTransactionManager;
-import io.ebeaninternal.api.SpiEbeanServer;
-import io.ebeaninternal.dbmigration.DdlGenerator;
 import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.jdbc.DataSourceBuilder;
@@ -64,7 +60,6 @@ public class EbeanTestConf {
         config.setExternalTransactionManager(new SpringJdbcTransactionManager());
         //config.setExpressionNativeIlike(true);
         config.loadFromProperties();
-
 
         DatabasePlatform dbPlatform = new DatabasePlatform();
         dbPlatform.getDbIdentity().setIdType(IdType.IDENTITY);

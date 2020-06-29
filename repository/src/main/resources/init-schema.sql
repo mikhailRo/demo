@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS `test-db`;
-CREATE DATABASE IF NOT EXISTS `test-db`;
-USE `test-db`;
+DROP DATABASE IF EXISTS `testdb`;
+CREATE DATABASE IF NOT EXISTS `testdb`;
+USE `testdb`;
