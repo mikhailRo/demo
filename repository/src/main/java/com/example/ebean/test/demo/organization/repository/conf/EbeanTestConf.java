@@ -58,7 +58,7 @@ public class EbeanTestConf {
         config.setDdlRun(true);
         config.setDdlExtra(false);
 //        config.setDdlSeedSql("schema.sql");
-        config.setDdlInitSql("init-schema.sql");
+//        config.setDdlInitSql("init-schema.sql");
 
         //config.addPackage("com.clevergang.dbtests.repository.impl.ebean.entities");
         config.setExternalTransactionManager(new SpringJdbcTransactionManager());

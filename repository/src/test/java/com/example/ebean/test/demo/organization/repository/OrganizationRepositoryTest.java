@@ -32,11 +32,11 @@ public class OrganizationRepositoryTest {
         System.out.println(byId);
     }
 
-    @Test
-    public void getVersions(){
-        final List<Version<Organization>> byId = organizationRepository.findVersionsById(1L);
-        System.out.println(byId);
-    }
+//    @Test
+//    public void getVersions(){
+//        final List<Version<Organization>> byId = organizationRepository.findVersionsById(1L);
+//        System.out.println(byId);
+//    }
 
 
 }
